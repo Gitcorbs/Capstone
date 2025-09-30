@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+  
+    <nav class="sidebar-container">
+
+      <div class="sidebar-header">
+        <img src="Pictures/Logo.png" alt="Logo" class="refresh-logo" onclick="
+          location.reload();">
+        <button class="sidebar-header-button">
+          <img class="sidebar-header-image" src="sidebar icons/close.png" alt="">
+        </button>
+      </div>
+
+      <div class="sidebar-link">
+        <img class="icons" src="sidebar icons/hamburger.png" >
+        <p class="sidebar-names">Dashboard</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/date.png" class="icons">
+        <p class="sidebar-names">Set Availability</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/clock.png" class="icons">
+        <p class="sidebar-names">View Appointments</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/cam-recorder.png" class="icons">
+        <p class="sidebar-names">Consult Online</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/folder.png" class="icons">
+        <p class="sidebar-names">Consultation Records</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/people.png" class="icons">
+        <p class="sidebar-names">Profile Management</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/notification.png" class="icons">
+        <p class="sidebar-names">Notifications</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/question.png" class="icons">
+        <p class="sidebar-names">Helpdesk</p>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="sidebar icons/log-out.png" class="icons">
+        <p class="sidebar-names">Logout</p>
+      </div>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+
+        <!-- Header Section -->
+        <header class="main-header">
+          <div class="header-info">
+            <h1>Hello Dr. Deiparine</h1>
+            <p id="p">Here's what happening today</p>
+          </div>
+        </header>
+
+        <!-- Stats Section-->
+        <div class="stats-grid">
+
+          <div class="stats-card">
+            <div class="stats-header">
+              <p>Total Appointments</p>
+              <img src="Dashboard icons/calendar.svg" class="icons">
+            </div>
+              <div>
+                <h2>8</h2>
+              </div>
+                <div>
+                  <p class="stats-p">Today</p>
+                </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-header">
+              <p>Pending Approvals</p>
+              <img src="Dashboard icons/schedule.svg" class="icons">
+            </div>
+              <div>
+                <h2>3</h2>
+              </div>
+                <div>
+                  <p class="stats-p">Require Attention</p>
+                </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-header">
+              <p>Completed</p>
+              <img src="Dashboard icons/check_circle.svg" class="icons">
+            </div>
+              <div>
+                <h2>5</h2>
+              </div>
+                <div>
+                  <p class="stats-p">Consultations</p>
+                </div>
+          </div>
+
+          <div class="stats-card">
+            <div class="stats-header">
+              <p>Online Consults</p>
+              <img src="Dashboard icons/videocam.svg" class="icons">
+            </div>
+              <div>
+                <h2>2</h2>
+              </div>
+                <div>
+                  <p class="stats-p">Today</p>
+                </div>
+          </div>
+        </div>
+
+
+        <!-- Pending Appointments Card -->
+        <div class="pending-appointments">
+          <div>
+            <p class="appointment-h">Pending Appointments</p>
+          </div>
+            <div>
+              <p class="appointment-p">Review and approve or reject appointment requests</p>
+            </div>
+          
+            <!-- Appointment Table -->
+            <div class="appointments-card">
+              <div class="table-header">
+                <p class="table-name">John Doe</p>
+                <p class="table-purpose">General Checkup</p>
+                <div class="table-time">10:00 AM</div>
+              </div>
+              <div class="table-buttons">
+                <button class="accept-reject-button" id="accept">
+                  <img src="Dashboard icons/accept-icon.svg" alt="Approve Icon" width="16" height="16">
+                  Accept</button>
+                <button class="accept-reject-button" id="reject">
+                  <img src="Dashboard icons/reject-icon.svg" alt="Reject" width="16" height="16">
+                  Reject</button>
+              </div>
+            </div>
+
+            <div class="appointments-card">
+              <div class="table-header">
+                <p class="table-name">Jane Smith</p>
+                <p class="table-purpose">Follow-up</p>
+                <div class="table-time">2:30 PM</div>
+              </div>
+              <div class="table-buttons">
+                <button class="accept-reject-button" id="accept">
+                  <img src="Dashboard icons/accept-icon.svg" alt="Approve Icon" width="16" height="16">
+                  Accept</button>
+                <button class="accept-reject-button" id="reject">
+                  <img src="Dashboard icons/reject-icon.svg" alt="Reject" width="16" height="16">
+                  Reject</button>
+              </div>
+            </div>
+            
+            <div class="appointments-card">
+              <div class="table-header">
+                <p class="table-name">Mike Johnson</p>
+                <p class="table-purpose">Consultation</p>
+                <div class="table-time">4:00 PM</div>
+              </div>
+              <div class="table-buttons">
+                <button class="accept-reject-button" id="accept">
+                  <img src="Dashboard icons/accept-icon.svg" alt="Approve Icon" width="16" height="16"> 
+                  Accept</button>
+                <button class="accept-reject-button" id="reject">
+                  <img src="Dashboard icons/reject-icon.svg" alt="Reject" width="16" height="16">
+                  Reject</button>
+              </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </main>
+</body>
+</html>
