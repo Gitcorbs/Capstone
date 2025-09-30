@@ -1,0 +1,441 @@
+/* FOOTER DESIGN */
+.footer {
+  background: linear-gradient(90deg, #0547d3 60%, #2196f3 100%);
+  color: #fff;
+  text-align: center;
+  padding: 2.5rem 0 1.5rem 0;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  box-shadow: 0 -2px 12px rgba(5,71,211,0.08);
+  position: relative;
+  z-index: 2;
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.footer-content a {
+  color: #ffe082;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.footer-content a:hover {
+  color: #fff176;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+:root {
+  --primary-bg: rgba(5, 71, 211);
+  --box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  --border: 1px solid rgb(195, 195, 195);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(5, 71, 211, 0.9);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+                                    /* NAV LOGO */
+.logo {                               
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+                                    /* NAV BUTTONS */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 10px;
+  transition: background-color 0.3s;
+}
+nav ul li a:hover {
+  background-color: #e5e5e5;
+  border-radius: 4px;
+  color: var(--primary-bg);
+}
+
+                            /* NAV LOGIN & SIGNUP BUTTONS */
+.nav-buttons {
+  display: flex;
+  column-gap: 13px;
+  margin-right: 10px;
+}
+#login {
+  text-decoration: none;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 8px 10px;
+  color: white;
+  align-self: center;
+  transition: 0.3s;
+} 
+#login:hover {
+  background-color: white;
+  color: var(--primary-bg);
+  padding: 15px;
+  font-size: 18px;
+}
+#signup {
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 8px 10px;
+  color: rgba(5, 71, 211);
+  align-self: center;
+  background-color: white;
+  transition: 0.3s;
+}
+#signup:hover {
+    padding: 15px;
+    font-size: 18px;
+}
+
+
+                                              /* BODY */
+
+
+/* ALL SECTION STYLE */
+section {
+  position: relative;
+  top: 80px;
+  padding: 60px 20px;
+}
+
+/* HOME SECTION */
+#home {
+  height: 90vh;
+  background-color: rgb(245, 245, 245);
+}
+
+#home-section { 
+  display: grid;
+  grid-template-columns: 1fr 700px; 
+  align-items: center;
+  justify-content: space-between;
+  min-height: 80vh;
+  padding: 0px 40px 40px 40px;
+
+}
+
+/* Left section */
+.home-left {     /*Parent div*/
+  display: grid;
+  flex: 1;
+  padding-right: 40px;
+}
+.home-left-section p{
+  font-size: 4rem;
+}
+
+#left-header {
+  font-weight: 600;
+}
+
+#left-header2 {
+  font-size: 400;
+  color: var(--primary-bg);
+}
+
+#left-header, #left-header2 {
+  font-size: 50px;
+  margin: 0px 0px;
+}
+
+                                        /*ABOUT US*/
+#about {
+  padding-top: 7rem;
+}
+
+.about-home-text h3 {       
+  color: black;
+  margin-bottom: 0px;
+}
+.about-home-text p {          /*Paragraph*/
+  color: gray;
+  font-size: 24px;
+  margin-top: 5px;
+}
+
+/* Features */
+.about-home-features {
+  display: flex;
+  justify-content: space-between;
+}
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+.features h5 {
+  margin: 0px;
+}
+.features p {
+  font-size: 11px;
+  margin: 4px 0px;
+  color: gray;
+  font-weight: 600;
+}
+
+.shield {
+  background-color: rgb(210, 227, 254);
+  width: 2rem;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.persons {
+  background-color: #d4ffe0;
+  width: 2rem;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.time {
+  background-color: #fdbbff;
+  width: 2rem;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+
+/* Right section */
+.home-right {     /* Parent div */
+  width: 700px; 
+  flex-shrink: 0;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 51vw;
+  bottom: 73vh;
+
+}
+.home-right-img {
+  width: 100%;
+  height: 500px; 
+  object-fit: cover;
+  border-radius: 25px;
+  border: 5px solid rgba(63, 140, 255, 0.5);
+  box-shadow: gray;
+}
+.home-image-absolute {
+  position: absolute;
+  top: 85%;
+  right: 80%;
+  bottom: -20%;
+  width: 200px;
+  height: 90px;
+  background-color: white;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 3px;
+}
+#home-image-absolute {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#home-image-absolute h4 {
+  font-family: arial;
+  font-size: 20px;
+  margin: 0px;
+}
+#home-image-absolute p {
+  color: gray;
+  font-size: 12px;
+  margin: 0px;
+  text-align: center;
+}
+
+
+/* ABOUT SECTION */
+#about { 
+  /* background-color: #ececf04d; */
+  background-color: white;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: var(--border);
+  border-radius: 15px;
+  box-shadow: var(--box-shadow);
+  padding-bottom: 3vh;
+  width: 70vw;
+  background-color: white;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 6rem;
+}
+
+.about-section p {
+  font-size: 20px;
+  margin: 3vh 10rem;
+  text-align: center;
+}
+.about-section i {
+  margin-bottom: 1vh;
+}
+
+                      /* MISSION AND VISION */
+
+.mission-vision-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.mission, .vision {
+  align-items: center;
+  text-align: center;
+  width: 30rem;
+  box-shadow: var(--box-shadow);
+  border: var(--border);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+.mission p, .vision p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin: 1rem ;
+}
+
+.mission h2, .vision h2 {
+  margin-top: 0px;
+}
+
+
+                              /* SERVICES */
+#services {
+  background-color: rgb(245, 245, 245);
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45rem;
+  text-align: center;
+  margin: 0px 5px;
+}
+.services-text p {
+  color: gray;
+  margin-top: 0px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 2rem 1rem;
+  text-align: center;
+  border: var(--border);
+  transition: box-shadow 0.2s;
+}
+.service-card:hover {
+  box-shadow: 0 4px 16px rgba(5,71,211,0.15);
+  border-color: #0547d3;
+}
+
+.service-card p {
+  color: gray;
+  font-size: 14px;
+}
+
+.service-icon-bg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem auto;
+}
+.service-card-icons {
+  width: 40px;
+  height: 40px;
+}
+
+/* Complimentary background colors for each icon */
+.general-medicine-bg { background: #ffbebe; }      /* light blue */
+.pediatrics-bg { background: #ffc1fa; }            /* light orange */
+.surgery-bg { background: #f8d6bb; }               /* light pink */
+.gynecology-bg { background: #f3e5f5; }            /* light purple */
+.cardiology-bg { background: #ffcdd2; }            /* light red */
+.orthopedics-bg { background: #9c9c9c; }           /* light green */
+.dermatology-bg { background: #fff9c4; }           /* light yellow */
+.ophthalmology-bg { background: #b2e8f2; }         /* light cyan */
+.ent-bg { background: #c3d102; }                   /* lavender */
+.radiology-bg { background: #ebfe1b; }             /* pale lime */
+.physical-therapy-bg { background: #d4fbdf; }      /* sky blue */
+.emergency-bg { background: #d1feff; }             /* light gold */
