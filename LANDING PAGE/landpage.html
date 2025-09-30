@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Navigation</title>
+  <link rel="stylesheet" href="landpage.css">
+</head>
+<body>
+
+  <!--Nav bar-->
+  <nav>
+    <div class="nav-logo">
+      <img onclick="location.reload();" class="logo" src="images/Logo.png" alt="logo">
+    </div>
+
+    <div class="nav-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+      </ul>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="" id="login">Login</a>
+      <a href="" id="signup">Signup</a>
+    </div>
+  </nav>
+
+  <!-- HOME SECTION -->
+  <main>
+    <section id="home"> <!--FOR SCROLLING TRANSITION-->
+      <div id="home-section"> <!--Main div for Home section-->
+
+        <!-- Home Left-Section -->
+        <div class="home-left">
+          <div>
+            <p id="left-header">Exceptional Healthcare</p>
+            <p id="left-header2">You Can Trust</p>
+          </div>
+            
+            <div class="about-home-text">
+              <h3>About Us</h3>
+              <p>
+                Our hospital is dedicated to providing compassionate, high-quality healthcare to our community.With over 10 years of service and a commitment to being open 24/7, we ensure that every patient receives the care and attention they deserve. Our experienced staff and state-of-the-art facilities make us a trusted choice for your health needs.
+              </p>
+            </div>
+            <div class="about-home-features">
+              <div class="features">
+                <div><img src="icons/shield.svg" alt="shield" class="shield"></div>
+                <div>
+                  <h5>24/7 Emergency</h5>
+                  <p>Always available</p>
+                </div>
+              </div>
+
+              <div class="features">
+                <div><img src="icons/persons.svg" alt="persons" class="persons"></div>
+                <div>
+                  <h5>Expert Doctors</h5>
+                  <p>Qualified Specialists</p>
+                </div>
+              </div>
+
+              <div class="features">
+                <div><img src="icons/time.svg" alt="time" class="time"></div>
+                <div>
+                  <h5>Quick Service</h5>
+                  <p>Minimal Waiting Times</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Home Right-section -->
+        <div class="home-right">
+          <img src="images/doctor picture.jpg" alt="" class="home-right-img">
+          <div class="home-image-absolute">
+            <div id="home-image-absolute">
+              <h4>10+</h4>
+              <p>Years of service</p>
+            </div>
+            <div id="home-image-absolute">
+              <h4>24/7</h4>
+              <p>Always open</p>
+            </div>
+          </div>
+        </div> 
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about"> <!--This is for the scroll animation-->
+      <div class="about-section"> <!--Main div-->
+        <div class="about">
+        <h1>ABOUT US</h1>
+        <p>At Deiparine Community Hospital, we believe quality healthcare should be accessible, compassionate, and close to home. Located at <i>422 C. Delos Cientos Street, Poblacion 6020 Sibonga, Philippines</i>, our hospital provides a full range of medical services—from emergency care and general medicine to pediatrics, surgery, and maternal health. With a team of dedicated doctors, nurses, and staff, we combine modern facilities with a personal touch, ensuring every patient receives safe, reliable, and affordable care. More than just a hospital, we are a partner in the community’s health and wellness.
+</p>
+        <i>✨ Your health, our commitment.</i>
+        </div>
+
+        <div class="mission-vision-row">
+          <div class="mission">
+            <h2>Mission</h2>
+            <p>To provide safe, reliable, and affordable healthcare services that improve the quality of life of every patient.</p>
+          </div>
+          <div class="vision">
+            <h2>Vision</h2>
+            <p>To be recognized as a trusted community hospital in Cebu, known for excellence in patient care and medical service.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- SERVICES SECTION -->
+    <section id="services"> <!--This is for the scroll animation-->
+      <div class="services-text">
+        <h2>Our Medical Services</h2>
+        <p>We offer comprehensive healthcare services with state-of-the-art facilities and experienced medical professionals across various specialties.</p>
+      </div>
+      
+      <div class="services-grid"> <!-- MAIN DIV -->
+        <div class="service-card">
+          <div class="service-icon-bg general-medicine-bg">
+            <img class="service-card-icons" src="icons/general medecine.svg" alt="General Medicine icon">
+          </div>
+          <h3>General Medicine</h3>
+          <p>Comprehensive care for adults and children.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg pediatrics-bg">
+            <img class="service-card-icons" src="icons/pediatrics.svg" alt="Pediatrics icon">
+          </div>
+          <h3>Pediatrics</h3>
+          <p>Specialized care for infants, children, and adolescents.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg surgery-bg">
+            <img class="service-card-icons" src="icons/surgery.svg" alt="Surgery icon">
+          </div>
+          <h3>Surgery</h3>
+          <p>Minor and major surgical procedures.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg gynecology-bg">
+            <img class="service-card-icons" src="icons/gynecology.svg" alt="Gynecology icon">
+          </div>
+          <h3>Obstetrics & Gynecology</h3>
+          <p>Women's health, pregnancy, and childbirth services.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg ophthalmology-bg">
+            <img class="service-card-icons" src="icons/ophthalmology.svg" alt="Ophthalmology icon">
+          </div>
+          <h3>Ophthalmology</h3>
+          <p>Eye care and vision services.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg orthopedics-bg">
+            <img class="service-card-icons" src="icons/orthopedics.svg" alt="Orthopedics icon">
+          </div>
+          <h3>Orthopedics</h3>
+          <p>Bone, joint, and muscle treatments.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg dermatology-bg">
+            <img class="service-card-icons" src="icons/dermatology.svg" alt="Dermatology icon">
+          </div>
+          <h3>Dermatology</h3>
+          <p>Skin care and treatment of skin conditions.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg cardiology-bg">
+            <img class="service-card-icons" src="icons/cardiology.svg" alt="Cardiology icon">
+          </div>
+          <h3>Cardiology</h3>
+          <p>Heart care and cardiovascular diagnostics.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg ent-bg">
+            <img class="service-card-icons" src="icons/ent.svg" alt="ENT icon">
+          </div>
+          <h3>ENT (Otolaryngology)</h3>
+          <p>Ear, nose, and throat care.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg radiology-bg">
+            <img class="service-card-icons" src="icons/radiology.svg" alt="Radiology icon">
+          </div>
+          <h3>Radiology</h3>
+          <p>Imaging and diagnostic services.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg physical-therapy-bg">
+            <img class="service-card-icons" src="icons/physical therapy.svg" alt="Physical Therapy icon">
+          </div>
+          <h3>Physical Therapy</h3>
+          <p>Rehabilitation and recovery services.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-bg emergency-bg">
+            <img class="service-card-icons" src="icons/emergency medecine.svg" alt="Emergency Medicine icon">
+          </div>
+          <h3>Emergency Medicine</h3>
+          <p>24/7 urgent and emergency care.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+
+<footer class="footer">
+  <div class="footer-content">
+    <p>&copy; 2025 Deiparine Community Hospital. All rights reserved.</p>
+    <p>422 C. Delos Cientos Street, Poblacion 6020 Sibonga, Philippines</p>
+    <p>Contact: <a href="mailto:info@deiparinehospital.com">deiparine.community.hospital@gmail.com</a> | (032) 268 3788</p>
+  </div>
+</footer>
+<script src="landpage.js"></script>
+</body>
+</html>
