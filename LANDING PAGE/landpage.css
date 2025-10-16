@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -579,18 +578,18 @@ section {
 }
 
 /* Complimentary background colors for each icon */
-.general-medicine-bg { background: #ffbebe; }      /* light blue */
-.pediatrics-bg { background: #ffc1fa; }            /* light orange */
-.surgery-bg { background: #f8d6bb; }               /* light pink */
-.gynecology-bg { background: #f3e5f5; }            /* light purple */
-.cardiology-bg { background: #ffcdd2; }            /* light red */
-.orthopedics-bg { background: #9c9c9c; }           /* light green */
-.dermatology-bg { background: #fff9c4; }           /* light yellow */
-.ophthalmology-bg { background: #b2e8f2; }         /* light cyan */
-.ent-bg { background: #c3d102; }                   /* lavender */
-.radiology-bg { background: #ebfe1b; }             /* pale lime */
-.physical-therapy-bg { background: #d4fbdf; }      /* sky blue */
-.emergency-bg { background: #d1feff; }             /* light gold */
+.general-medicine-bg { background: #ffbebe; }      
+.pediatrics-bg { background: #ffc1fa; }           
+.surgery-bg { background: #f8d6bb; }               
+.gynecology-bg { background: #f3e5f5; }          
+.cardiology-bg { background: #ffcdd2; }          
+.orthopedics-bg { background: #9c9c9c; }         
+.dermatology-bg { background: #fff9c4; }           
+.ophthalmology-bg { background: #b2e8f2; }         
+.ent-bg { background: #c3d102; }                   
+.radiology-bg { background: #ebfe1b; }             
+.physical-therapy-bg { background: #d4fbdf; }      
+.emergency-bg { background: #d1feff; }             
 
 /* FOOTER DESIGN */
 .footer {
@@ -619,4 +618,64 @@ section {
 }
 .footer-content a:hover {
   color: #fff176;
+}
+
+/* Service modal styles */
+.service-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.45);
+  z-index: 2000;
+  padding: 1.5rem;
+}
+.service-modal.open {
+  display: flex;
+}
+.service-modal-content {
+  background: #fff;
+  max-width: 720px;
+  width: 100%;
+  border-radius: 12px;
+  padding: 1.5rem 1.75rem;
+  box-shadow: 0 12px 48px rgba(5,71,211,0.18);
+  position: relative;
+}
+.service-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+.service-modal .modal-title {
+  margin: 0 0 0.5rem 0;
+  color: #0547d3;
+}
+.service-modal .modal-desc {
+  margin-top: 0.75rem;
+  color: #333;
+  line-height: 1.6;
+}
+.service-modal .modal-doctors {
+  margin: 0.25rem 0 0 0;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .service-modal-content {
+    padding: 1rem;
+    border-radius: 8px;
+  }
+  .service-modal-close {
+    top: 8px;
+    right: 8px;
+    font-size: 22px;
+  }
 }
